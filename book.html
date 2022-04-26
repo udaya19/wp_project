@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./book.css">
+    <script src="https://kit.fontawesome.com/05b8e61411.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="product-info">
+        <div class="img">
+            <img src="./images/RB1.jpg" alt="">
+        </div>
+        <div class="book-info">
+            <h2>WHO WILL CRY WHEN YOU DIE?</h2>
+            <h6 id="cost">200/-</h6>
+            <div class="qty" id="qty">
+                <div class="minus" onclick="calcPrice()">
+                    <i class="fa-solid fa-minus"></i>
+                </div> 
+                <input type="number" value="1" id="quantity"> 
+                <div class="plus" onclick="calcPrice()">
+                    <button><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./book.js"></script>
+</html>

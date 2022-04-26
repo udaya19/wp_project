@@ -1,0 +1,42 @@
+.row1 ,.row2 , .row3 , .row4{
+    margin:5px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.row1 .left , .row2 .left , .row3 .left , .row4 .left{
+    flex-basis: 40%;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+.row1 .left img , .row2 .left img , .row3 .left img , .row4 .left img{
+    border-radius: 20px;
+    
+}
+
+.row1 .right , .row2 .right , .row3 .right , .row4 .right{
+    flex-basis: 40%;
+    margin-top: 70px;
+}
+
+.row1 .right h3 , .row2 .right h3 , .row3 .right h3 , .row4 .right h3{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: 400;
+    margin-bottom: 0%;
+    margin-top: 40px;
+}
+
+.right span{
+    color: rgb(238, 109, 109);
+
+}
+
+.right i{
+    color: orange;
+}
+

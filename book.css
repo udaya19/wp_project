@@ -1,0 +1,73 @@
+.product-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: rgb(255, 238, 228);
+    padding: 100px 40px 100px 40px ;
+    width: fit-content;
+    margin-left: 20%;
+}
+
+.product-info .img img{
+    width: 290px;
+    height: 410px;
+}
+
+.img{
+    flex-basis: 20%;
+}
+
+.book-info{
+    margin-left: 90px;
+    flex-basis: 30%;
+}
+
+.book-info h2{
+    font-weight: 400;
+    font-size: 25px;
+    color: darkblue;
+}
+
+.book-info h6{
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.qty{
+    display: flex;
+}
+
+.qty .minus{
+    border: 2px solid black;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.qty .minus i{
+    padding: 4px;
+    background: orange;
+}
+
+.qty .plus{
+    border: 2px solid black;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.qty .plus i{
+    padding: 4px;
+    background: orange;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.btn button{
+    padding: 5px 50px 5px 50px;
+    background-color: darkblue;
+    color: rgb(255, 238, 228);
+}

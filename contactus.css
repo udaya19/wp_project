@@ -1,0 +1,45 @@
+.contact{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(255, 238, 228);
+    padding: 20px;
+}
+
+.contact__heading{
+    color: darkblue;
+    font-size: 30px;
+}
+
+.contact__text{
+    font-size: 25px;
+    color: darkblue;
+}
+
+.contact__content{
+    line-height: 0.5;
+}
+
+input[type='text'],
+input[type="email"]{
+    outline: 0;
+    padding: 4px 2px;
+    width: 250px;
+}
+
+input[type=email]:focus{
+    border: 1px solid darkblue;
+
+}
+
+textarea{
+    outline: 0;
+}
+
+::placeholder{
+    color: darkblue;
+}
+
+.btn{
+    color: rgb(255, 238, 228);
+    background: darkblue;
+}
