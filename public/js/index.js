@@ -19,11 +19,6 @@ function toggle(){
 }
 
 function toggle1(){
-    // let blur = document.getElementById("blur");
-    // blur.classList.toggle('active');
-    // let popup = document.getElementById("popup");
-    // popup.classList.toggle('active');
-
     let blur  = document.querySelector(".blur");
     blur.classList.toggle('active');
     let popup1 = document.querySelector(".popup1");
