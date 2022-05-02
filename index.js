@@ -12,8 +12,13 @@ app.get("/",(req,res)=>{
 app.get('/products',(req,res)=>{
     res.render("products");
 })
+app.get('/signin.hbs',(req,res)=>{
+    res.render("signin");
+})
 hbs.registerPartials(__dirname+'/views','{{nav}}')
 hbs.registerPartials(__dirname+'/views','{{footer}}')
+hbs.registerPartials(__dirname+'/views','{{nav1}}')
+
 
 
 app.listen("3001",()=>{
