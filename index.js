@@ -3,6 +3,7 @@ const app = express();
 const hbs = require("hbs");
 const path = require("path");
 const mongoose = require('mongoose');
+const customers = require('./routes/customer');
 try{
     mongoose.connect('mongodb://localhost/wp_project')
     .then(()=>{
@@ -33,8 +34,8 @@ hbs.registerPartials(__dirname+'/views','{{nav}}')
 hbs.registerPartials(__dirname+'/views','{{footer}}')
 hbs.registerPartials(__dirname+'/views','{{nav1}}')
 
-
-
+app.use(express.json());
+app.use('/api/customers',customers);
 app.listen("3001",()=>{
     console.log("Server running on 3001");
 })
