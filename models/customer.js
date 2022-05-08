@@ -12,6 +12,10 @@ const Customer = mongoose.model('Customer',new mongoose.Schema({
     },
     password:{
         type:String,
+        required:true,
+    },
+    confirmpassword:{
+        type:String,
         required:true
     }
 }))
