@@ -13,19 +13,25 @@ router.get('/:id',async (req,res)=>{
 
 /*Post method*/
 router.post('/',async (req,res)=>{
-    let customer = await Customer.findOne({ email: req.body.email });
-  if (customer) return res.status(400).send('User already registered.');
-     customer = new Customer({
+//     let customer = await Customer.findOne({ email: req.body.email });
+//   if (customer){
+//       return alert("User already registered");
+//       //return res.status(400).send('User already registered.');
+//   }
+    let customer = new Customer({
         name:req.body.name,
         email:req.body.email,
         password:req.body.password,
         confirmpassword:req.body.confirmpassword
     })
-    if(req.body.password!=req.body.confirmpassword){
-        return res.status(400).send("Password and confirm password are not equal");
-    }
+    // if(req.body.password!=req.body.confirmpassword){
+    //     return alert("Password and confirm password must be equal");
+    //     //return res.status(400).send("Password and confirm password are not equal");
+    // }
     customer = await customer.save();
-    res.send(customer);
+    res.redirect('/products');
+    //res.send(customer);
+    
 })
 
 /*Put method*/
