@@ -15,10 +15,10 @@
             <button type="button" class="toggle-btn" onclick="login()">login</button>
             <button type="button" class="toggle-btn" onclick="signup()">signup</button>
         </div>
-        <form id="login" class="input-group">
+        <form id="login" class="input-group" method="get" action="/products">
                 <div class="info-1">
-                <input type="email" placeholder="Email" required> </br>
-                <input type="password" placeholder="Password" required > </br>
+                <input type="email" placeholder="Email" required name="email"> </br>
+                <input type="password" placeholder="Password" required name="password"> </br>
                 <button type="submit" class="submit-btn">login</button>
                 </div>
         </form>

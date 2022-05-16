@@ -4,6 +4,7 @@ const hbs = require("hbs");
 const path = require("path");
 const mongoose = require('mongoose');
 const customers = require('./routes/customer');
+const query = require('./routes/queries');
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended:true}))
 try{
@@ -38,6 +39,7 @@ hbs.registerPartials(__dirname+'/views','{{nav1}}')
 
 app.use(express.json());
 app.use('/',customers);
+// app.use('/add-query',query)
 app.listen("3001",()=>{
-    console.log("Server running on 3001");
+    console.log("Server running on 3001")
 })
