@@ -11,6 +11,7 @@ btn.addEventListener('click',()=>{
     }
 })
 
+
 function toggle(){
     let blur  = document.querySelector(".blur");
     blur.classList.toggle('active');
